@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="timer app" />
+    <script type="module" src="./src/main.js" defer></script>
+    <title>launch-countdown-timer</title>
+  </head>
+  <body
+    class="bg-[url('./src/assets/images/bg-stars.svg')] bg-no-repeat bg-cover bg-slate-900 text-[1.4rem] font-bold text-white flex flex-col items-center gap-15 justify-between h-screen"
+  >
+    <main class="flex-1 flex items-center justify-between">
+      <div class="flex flex-col gap-35 text-center">
+        <h1
+          class="tracking-[1rem] font-black text-2xl [-webkit-text-stroke:1px_var(--color-white)]"
+        >
+          WE'RE LAUNCHING SOON
+        </h1>
+        <div class="flex gap-8">
+          <div class="flex flex-col gap-8">
+            <div class="dots relative perspective-midrange">
+              <div class="rectangular rectangular-top"></div>
+              <div class="rectangular rectangular-bottom"></div>
+              <output class="text-output" id="count-day">08</output>
+            </div>
+            <span class="text-label">DAYS</span>
+          </div>
+          <div class="flex flex-col gap-8">
+            <div class="dots relative">
+              <div class="rectangular rectangular-top"></div>
+              <div class="rectangular rectangular-bottom"></div>
+              <output class="text-output" id="count-h">23</output>
+            </div>
+            <span class="text-label">HOURS</span>
+          </div>
+          <div class="flex flex-col gap-8">
+            <div class="dots relative">
+              <div class="rectangular rectangular-top"></div>
+              <div class="rectangular rectangular-bottom"></div>
+              <output class="text-output" id="count-min">55</output>
+            </div>
+            <span class="text-label">MINUTES</span>
+          </div>
+          <div class="flex flex-col gap-8">
+            <div class="dots relative">
+              <div class="rectangular rectangular-top"></div>
+              <div class="rectangular rectangular-bottom"></div>
+              <output class="text-output" id="count-sec">41</output>
+            </div>
+            <span class="text-label">SECONDS</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="relative bottom-0 w-full bg-[url('./src/assets/images/pattern-hills.svg')] left-0 h-58 bg-no-repeat bg-cover flex items-center justify-center"
+    >
+      <div class="flex gap-8 items-center">
+        <a href="#" class="icons-item">
+          <svg class="icons">
+            <use href="./src/assets/images/icon-facebook.svg"></use>
+          </svg>
+        </a>
+        <a href="#" class="icons-item">
+          <svg class="icons">
+            <use href="./src/assets/images/icon-pinterest.svg"></use>
+          </svg>
+        </a>
+        <a href="#" class="icons-item">
+          <svg class="icons">
+            <use href="./src/assets/images/icon-instagram.svg"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

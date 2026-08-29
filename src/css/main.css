@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "@fontsource/red-hat-text";
+@variant hover (&:hover);
+@theme {
+  --color-lavender-300: hsl(237, 18%, 59%);
+  --color-pink-100: hsl(345, 95%, 68%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-700: hsl(236, 21%, 26%);
+  --color-slate-800: hsl(235, 16%, 14%);
+  --color-slate-900: hsl(234, 17%, 12%);
+  --font-sans: "Red Hat Text", sans-serif;
+  --font-weight-bold: 700;
+}
+@layer base {
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+}
+@layer components {
+  .rectangular {
+    @apply rounded-[0.6rem] w-50 h-25;
+  }
+  .text-output {
+    @apply text-pink-100 text-[6rem] absolute left-1/2 top-1/2 tracking-[0.5rem] -translate-1/2 [-webkit-text-stroke:3px_var(--color-pink-100)];
+  }
+  .text-label {
+    @apply tracking-[0.5rem] text-lg text-lavender-300  [-webkit-text-stroke:0.5px_var(--color-lavender-300)];
+  }
+  .dots {
+    @apply after:absolute after:-right-2 after:top-1/2 after:-translate-y-1/2 after:bg-slate-900 after:size-4 after:rounded-full before:absolute before:-left-2 before:top-1/2 before:-translate-y-1/2 before:bg-slate-900 before:size-4 before:rounded-full;
+  }
+  .rectangular-top {
+    @apply bg-[#2c2c44] border-b border-slate-800;
+  }
+  .rectangular-bottom {
+    @apply bg-slate-700 shadow-[0_8px_1px_0_rgba(0,0,0,0.4)];
+  }
+  .icons-item {
+    @apply scale-80;
+  }
+  .icons {
+    @apply size-10 fill-lavender-300 hover:fill-pink-100 transition-colors;
+  }
+  .animate-flip {
+    animation: flip 0.8s ease-in-out infinite;
+    backface-visibility: hidden;
+  }
+}
+@layer utilities {
+}
+@keyframes flip {
+  to {
+    transform: rotateX(-180deg);
+  }
+}
