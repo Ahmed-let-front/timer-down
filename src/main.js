@@ -13,16 +13,16 @@ const updataUi = (data) => {
   elements.SSEL.textContent = data.SS;
 };
 const ubdateTimer = () => {
-  let DD = Math.floor(elements.totalSeconds / (3600 * 24))
+  const DD = Math.floor(elements.totalSeconds / (3600 * 24))
     .toString()
     .padStart(2, "0");
-  let HH = Math.floor((elements.totalSeconds % (3600 * 24)) / 3600)
+  const HH = Math.floor((elements.totalSeconds % (3600 * 24)) / 3600)
     .toString()
     .padStart(2, "0");
-  let MM = Math.floor((elements.totalSeconds % 3600) / 60)
+  const MM = Math.floor((elements.totalSeconds % 3600) / 60)
     .toString()
     .padStart(2, "0");
-  let SS = Math.floor(elements.totalSeconds % 60)
+  const SS = Math.floor(elements.totalSeconds % 60)
     .toString()
     .padStart(2, "0");
   return { DD, HH, MM, SS };

@@ -42,15 +42,4 @@
   .icons {
     @apply size-10 fill-lavender-300 hover:fill-pink-100 transition-colors;
   }
-  .animate-flip {
-    animation: flip 0.8s ease-in-out infinite;
-    backface-visibility: hidden;
-  }
-}
-@layer utilities {
-}
-@keyframes flip {
-  to {
-    transform: rotateX(-180deg);
-  }
 }
