@@ -19,13 +19,13 @@
 }
 @layer components {
   .rectangular {
-    @apply rounded-[0.6rem] w-50 h-25;
+    @apply rounded-[0.6rem] md:w-50 md:h-25 w-23 h-21.5;
   }
   .text-output {
-    @apply text-pink-100 text-[6rem] absolute left-1/2 top-1/2 tracking-[0.5rem] -translate-1/2 [-webkit-text-stroke:3px_var(--color-pink-100)];
+    @apply text-pink-100 text-4xl md:text-[6rem] absolute left-1/2 top-1/2 md:tracking-[0.5rem] -translate-1/2 [-webkit-text-stroke:1px_var(--color-pink-100)] md:[-webkit-text-stroke:3px_var(--color-pink-100)];
   }
   .text-label {
-    @apply tracking-[0.5rem] text-lg text-lavender-300  [-webkit-text-stroke:0.5px_var(--color-lavender-300)];
+    @apply tracking-[0.5rem] text-[0.5rem] md:text-lg text-lavender-300  [-webkit-text-stroke:0.5px_var(--color-lavender-300)];
   }
   .dots {
     @apply after:absolute after:-right-2 after:top-1/2 after:-translate-y-1/2 after:bg-slate-900 after:size-4 after:rounded-full before:absolute before:-left-2 before:top-1/2 before:-translate-y-1/2 before:bg-slate-900 before:size-4 before:rounded-full;
