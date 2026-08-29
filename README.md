@@ -1,9 +1,9 @@
 # Frontend Mentor - Launch countdown timer
 
-![Design preview for the Launch countdown timer coding challenge](preview.jpg)
+![Design preview for the Launch countdown timer coding challenge](public/preview.jpg)
 
 ## Welcome! 👋
-
+## [Live Site URL](https://ahmed-let-front.github.io/timer-down/)
 Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
